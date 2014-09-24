@@ -83,9 +83,9 @@ function importFromString(codes){
 		onload: function(res) {
 			if (res.responseText == "ok") {
 				window.location.reload();
-				GM_notification("Код сохранен!");
+				GM_notification("РљРѕРґ СЃРѕС…СЂР°РЅРµРЅ!");
 			} else {
-				GM_notification("Код не сохранен! Ошибка: " + res.responseText);
+				GM_notification("РљРѕРґ РЅРµ СЃРѕС…СЂР°РЅРµРЅ! РћС€РёР±РєР°: " + res.responseText);
 			}
 		}
 	});
@@ -106,7 +106,7 @@ GM_registerMenuCommand("export from editor",function(){
 	GM_openInTab("https://github.com/KOLANICH/ai-challenge-Exporter/issues/1");
 	/*var spl = this.get("splitCode");
 	if (!$(btn).hasClass("disabled")) {
-		$(btn).addClass("disabled").html("Отправка...");
+		$(btn).addClass("disabled").html("РћС‚РїСЂР°РІРєР°...");
 	for (var name in spl) {
 		data += "89c4e347cdca08508a415e959f2a9b5c" + name + "89c4e347cdca08508a415e959f2a9b5c" + encodeURIComponent(spl[name].cm.getValue());
 	}
